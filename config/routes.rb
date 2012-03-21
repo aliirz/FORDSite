@@ -3,12 +3,15 @@ FORDSite::Application.routes.draw do
 
   get "home/introduction"
 
+  get "home/projects"
+
+  get "home/institutes"
+
   get "home/structure"
 
   get "home/constitution"
 
   get "home/contact"
-  get "home/institutes"
 
   root :to => 'home#introduction'
 
