@@ -1,6 +1,8 @@
 class UpdatesController < ApplicationController
   # GET /updates
   # GET /updates.json
+http_basic_authenticate_with :name => "ford", :password => "ford786&*^", :except => [:index, :show]
+  
   def index
     @updates = Update.all
 

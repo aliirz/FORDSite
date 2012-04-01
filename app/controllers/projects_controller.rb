@@ -1,6 +1,8 @@
 class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.json
+
+  http_basic_authenticate_with :name => "ford", :password => "ford786&*^", :except => [:index, :show]
   def index
     @projects = Project.all
 

@@ -26,7 +26,7 @@
             <li><%= link_to "Structure", :controller => "home", :action => "structure" %></li>
            	<li><%= link_to "Constitution", :controller => "home", :action => "constitution" %></li>
             <li><%= link_to "Institutes", :controller => "home", :action => "institutes" %></li>
-           	<li><%= link_to "Projects", :controller => "home", :action => "projects" %></li>
+           	<li><%= link_to "Projects", :controller => "projects", :action => "index" %></li>
             <li><%= link_to "Contact", :controller => "home", :action => "contact" %></li>
           </ul>
         </div>
@@ -36,8 +36,24 @@
 
   <div class="container">
   	     <div class="hero-unit">
-        	<h1>Frontier Org. for Rural Development</h1>
-      	 </div>
+         
+              <%= image_tag("FORD-Logo.jpg", :alt=>"Ford") %>
+           
+              <h1>Frontier Org. for Rural Development</h1>
+           
+          </div>
+         
   	<%= yield %>
+      <footer class="row myFooter">
+        <div class="span9">
+          <p> <br />Developed & Designed by: Muhammad Sayyam</p>
+          </div>
+          <div class="span3">
+            <p> <br />mhd.sayyam@yahoo.com</p>
+          </div>
+  </footer>
   </div>
+
+
+
 </body>

@@ -1,9 +1,10 @@
 <h1>Listing projects</h1>
 
-<table>
+<table class="table">
   <tr>
     <th>Title</th>
     <th>Content</th>
+    <th>Status</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,13 +14,11 @@
   <tr>
     <td><%= project.title %></td>
     <td><%= project.content %></td>
+    <td><%= project.status %></td>
     <td><%= link_to 'Show', project %></td>
-    <td><%= link_to 'Edit', edit_project_path(project) %></td>
-    <td><%= link_to 'Destroy', project, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+    </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Project', new_project_path %>
