@@ -1,5 +1,7 @@
 FORDSite::Application.routes.draw do
   
+  resources :advertisements
+
   resources :projects
 
   resources :updates
@@ -15,6 +17,8 @@ FORDSite::Application.routes.draw do
   get "home/constitution"
 
   get "home/contact"
+
+  get "home/advertisements"
 
   root :to => 'home#introduction'
 

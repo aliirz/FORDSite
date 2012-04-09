@@ -15,6 +15,9 @@ class HomeController < ApplicationController
   def institutes
   end
 
+  def advertisement
+  end
+
   def contact
   end
 end
