@@ -1,0 +1,24 @@
+<h1>Listing projects</h1>
+
+<table class="table">
+  <tr>
+    <th>Title</th>
+    <th>Content</th>
+    <th>Status</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @projects.each do |project| %>
+  <tr>
+    <td><%= project.title %></td>
+    <td><%= project.content %></td>
+    <td><%= project.status %></td>
+    <td><%= link_to 'Show', project %></td>
+    </tr>
+<% end %>
+</table>
+
+<br />
+
