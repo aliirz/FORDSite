@@ -3,6 +3,9 @@ class HomeController < ApplicationController
   	@updates = Update.all
   end
 
+  def Projects
+  end
+  
   def structure
   end
 
@@ -10,6 +13,9 @@ class HomeController < ApplicationController
   end
 
   def institutes
+  end
+
+  def advertisement
   end
 
   def contact

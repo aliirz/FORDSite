@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Store</title>
+  <title>FORD</title>
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
   <![endif]-->
@@ -23,10 +23,12 @@
         <div class="nav-collapse">
           <ul class="nav">
            	<li><%= link_to "Home", :controller => "home", :action => "introduction" %></li>
-           	<li><%= link_to "Structure", :controller => "home", :action => "structure" %></li>
-           	<li><%= link_to "Institutes", :controller => "home", :action => "institutes" %></li>
+            <li><%= link_to "Structure", :controller => "home", :action => "structure" %></li>
            	<li><%= link_to "Constitution", :controller => "home", :action => "constitution" %></li>
-           	<li><%= link_to "Contact", :controller => "home", :action => "contact" %></li>
+            <li><%= link_to "Institutes", :controller => "home", :action => "institutes" %></li>
+           	<li><%= link_to "Projects", :controller => "projects", :action => "index" %></li>
+            <li><%= link_to "Advertisements", :controller => "Advertisements", :action => "index" %></li>
+            <li><%= link_to "Contact", :controller => "home", :action => "contact" %></li>
           </ul>
         </div>
       </div>
@@ -35,8 +37,24 @@
 
   <div class="container">
   	     <div class="hero-unit">
-        	<h1>Frontier Org. for Rural Development</h1>
-      	 </div>
+         
+              <%= image_tag("FORD-Logo.jpg", :alt=>"Ford") %>
+           
+              <h1>Frontier Org. for Rural Development</h1>
+           
+          </div>
+         
   	<%= yield %>
+      <footer class="row myFooter">
+        <div class="span9">
+          <p> <br />Developed & Designed by: Muhammad Sayyam</p>
+          </div>
+          <div class="span3">
+            <p> <br />mhd.sayyam@yahoo.com</p>
+          </div>
+  </footer>
   </div>
+
+
+
 </body>
