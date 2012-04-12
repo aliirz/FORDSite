@@ -11,6 +11,7 @@
 <% @advertisements.each do |advertisement| %>
   <tr>
     <td><%= advertisement.name %></td>
+    <td><%= image_tag advertisement.pic.url(:medium) %></td>
     <td><%= link_to 'Show', advertisement %></td>
     <td><%= link_to 'Edit', edit_advertisement_path(advertisement) %></td>
     <td><%= link_to 'Destroy', advertisement, confirm: 'Are you sure?', method: :delete %></td>
