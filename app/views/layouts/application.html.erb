@@ -12,27 +12,31 @@
 </head>
 <body>
   <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </a>
-        <a class="brand" href="#">FORD</a>
-        <div class="nav-collapse">
-          <ul class="nav">
-           	<li><%= link_to "Home", :controller => "home", :action => "introduction" %></li>
-            <li><%= link_to "Structure", :controller => "home", :action => "structure" %></li>
-           	<li><%= link_to "Constitution", :controller => "home", :action => "constitution" %></li>
-            <li><%= link_to "Institutes", :controller => "home", :action => "institutes" %></li>
-           	<li><%= link_to "Projects", :controller => "projects", :action => "index" %></li>
-            <li><%= link_to 'Advertisements', advertisements_path %></li>
-            <li><%= link_to "Contact", :controller => "home", :action => "contact" %></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <ul class="nav nav-pills">
+  <li class="active"><a href="#">FORD</a></li>
+  <li class="dropdown" id="menu1">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
+      Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="introduction">Introduction</a></li>
+      <li><a href="progress">Progress Report</a></li>
+      <li><a href="activities">Activities</a></li>
+    </ul>
+  </li>
+
+  <li class="dropdown" id="menu2">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#menu2">
+      Structure
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li><a href="bog">BOG</a></li>
+      <li><a href="exec-body">EB</a></li>
+    </ul>
+  </li>
+</ul>
   </div>
 
   <div class="container">

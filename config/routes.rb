@@ -10,7 +10,7 @@ FORDSite::Application.routes.draw do
 
   get "home/institutes"
 
-  get "home/structure"
+  get "home/bog"
 
   get "home/projects"
 
