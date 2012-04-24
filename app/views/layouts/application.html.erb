@@ -20,9 +20,9 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
-      <li><a href="introduction">Introduction</a></li>
-      <li><a href="progress">Progress Report</a></li>
-      <li><a href="activities">Activities</a></li>
+      <li><%=link_to "Introduction", :controller=> "home", :action => "introduction" %></li>
+      <li><%=link_to "Progress", :controller=> "home", :action=> "progress" %></li>
+      <li><%=link_to "Activities", :controller=> "home", :action=> "activities" %></li>
     </ul>
   </li>
 
