@@ -8,13 +8,23 @@ FORDSite::Application.routes.draw do
 
   get "home/introduction"
 
-  get "home/institutes"
+  get "home/ipsa"
+
+  get "home/jobcenter"
+
+  get "home/library"
+
+  get "home/teamipsa"
+
+  get "home/englanguage"
 
   get "home/progress"
 
   get "home/activities"
 
   get "home/bog"
+
+  get "home/execbody"
 
   get "home/projects"
 
