@@ -1,6 +1,8 @@
 class AdvertisementsController < ApplicationController
   # GET /advertisements
   # GET /advertisements.json
+  
+http_basic_authenticate_with :name => "ford", :password => "ford786&*^", :except => [:index, :show]
   def index
     @advertisements = Advertisement.all
 
