@@ -20,7 +20,7 @@ FORDSite::Application.routes.draw do
 
   get "home/progress"
 
-  get "home/activities"
+  get "home/picgallery"
 
   get "home/bog"
 
