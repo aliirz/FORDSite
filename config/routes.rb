@@ -1,5 +1,7 @@
 FORDSite::Application.routes.draw do
   
+  resources :galleries
+
   resources :advertisements
 
   resources :projects
@@ -20,7 +22,7 @@ FORDSite::Application.routes.draw do
 
   get "home/progress"
 
-  get "home/picgallery"
+  get "home/galleries"
 
   get "home/bog"
 

@@ -24,7 +24,7 @@
           <ul class="dropdown-menu">
             <li><%=link_to "Introduction", :controller=> "home", :action => "introduction" %></li>
             <li><%=link_to "Progress Report", :controller=> "home", :action=> "progress" %></li>
-            <li><%=link_to "Picture Gallery", :controller=> "home", :action=> "picgallery" %></li>
+            <li><%= link_to "Photo Gallery", :action=>"show", :controller=>"galleries" %></li>
           </ul>
           </li>
 
